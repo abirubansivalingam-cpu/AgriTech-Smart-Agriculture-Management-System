@@ -1,0 +1,1 @@
+{% extends "base.html" %}{% block content %}<div class="form-wrap"><a class="back" href="{% url 'dashboard' %}">← Back to dashboard</a><div class="panel form-panel"><span class="eyebrow">AGRITECH WORKSPACE</span><h1>{{ heading }}</h1><form method="post">{% csrf_token %}{{ form.as_p }}<button class="btn">Save details</button></form></div></div>{% endblock %}
